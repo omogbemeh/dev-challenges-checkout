@@ -1,441 +1,443 @@
-            html {
-                font-size: 50%;
-                box-sizing: border-box;
-            }
-            
-            *,
-            *::before,
-            *::after {
-                box-sizing: inherit;
-                margin: 0;
-                padding: 0;
-            }
-            
-            body {
-                height: 100vh;
-                min-width: 320px;
-                display: grid;
-                grid: 1fr max-content / 1fr;
-                justify-items: center;
-            }
-            
-            .main,
-            .footer {
-                max-width: 114rem;
-                width: 100%;
-                padding: 3rem 3rem;
-            }
-            
-            .page-intro {
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 2.4rem;
-                line-height: 2.9rem;
-                color: #4E5150;
-                padding-bottom: 2rem;
-            }
-            
-            .right-section {
-                padding: 3rem 2rem;
-                background: #F2F2F2;
-                margin-bottom: 5rem;
-            }
-            
-            .right-section,
-            .left-section {
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .item-image,
-            .right-section {
-                border-radius: 1.2rem;
-                -webkit-border-radius: 1.2rem;
-                -moz-border-radius: 1.2rem;
-                -ms-border-radius: 1.2rem;
-                -o-border-radius: 1.2rem;
-                object-fit: contain;
-            }
-            
-            .item {
-                display: grid;
-                grid: max-content / max-content 1fr;
-                column-gap: 2rem;
-                margin-bottom: 4rem;
-            }
-            
-            .item-image {
-                max-height: 12.4rem;
-            }
-            
-            .item-right {
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-            }
-            
-            .item-name {
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 1.4rem;
-                line-height: 1.6rem;
-                color: #4E5150;
-                margin-bottom: 1rem;
-            }
-            
-            .price-now {
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 1.4rem;
-                line-height: 1.7rem;
-                color: #F2994A;
-                margin-right: 1rem;
-            }
-            
-            .price {
-                display: flex;
-                align-items: center;
-            }
-            
-            .price-before {
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 1.2rem;
-                line-height: 1.4rem;
-                text-decoration-line: line-through;
-                color: #4E5150;
-            }
-            
-            .edit-quantity {
-                margin-top: auto;
-                display: flex;
-                width: 80%;
-                justify-content: space-between;
-                align-items: center;
-                padding: 1.3rem;
-                border: 1px solid #828282;
-                border-radius: 1.2rem;
-                -webkit-border-radius: 1.2rem;
-                -moz-border-radius: 1.2rem;
-                -ms-border-radius: 1.2rem;
-                -o-border-radius: 1.2rem;
-            }
-            
-            .edit-quantity i {
-                padding: .6rem .7rem;
-                background: #E0E0E0;
-                border-radius: 4px;
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                -ms-border-radius: 4px;
-                -o-border-radius: 4px;
-                color: #828282;
-            }
-            
-            .edit-quantity .quantity {
-                font-size: 1.8rem;
-            }
-            
-            .lower-section {
-                margin-top: 10rem;
-                margin-bottom: auto;
-            }
-            
-            .lower-section-text {
-                padding: 2rem 0;
-                display: flex;
-                justify-content: space-between;
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 1.4rem;
-                line-height: 1.7rem;
-                color: #333333;
-                border-top: 1px solid #BDBDBD;
-            }
-            
-            .lower-section-text:last-child {
-                padding-bottom: 0;
-            }
-            
-            .left-intro {
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 1.4rem;
-                line-height: 1.7rem;
-                color: #333333;
-                margin-bottom: 2rem;
-            }
-            
-            .left-intro:not(:first-of-type) {
-                margin-top: 4rem;
-            }
-            
-            .form {
-                display: grid;
-                grid: max-content / 1fr;
-                grid-auto-rows: max-content;
-                row-gap: 1rem;
-            }
-            
-            .form-label {
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 1.2rem;
-                line-height: 1.4rem;
-                color: #4F4F4F;
-            }
-            
-            .input-group {
-                margin-top: .5rem;
-                margin-bottom: 1rem;
-                display: flex;
-                align-items: center;
-                color: #828282;
-                justify-content: space-between;
-                border: 1px solid #828282;
-                padding: .9rem 1rem;
-                border-radius: 1.2rem;
-                -webkit-border-radius: 1.2rem;
-                -moz-border-radius: 1.2rem;
-                -ms-border-radius: 1.2rem;
-                -o-border-radius: 1.2rem;
-            }
-            
-            .form-icon {
-                font-size: 1.5rem;
-                margin-right: 1rem;
-            }
-            
-            .form-input {
-                flex: 1;
-                border: none;
-                outline: none;
-            }
-            
-            .two-form-inputs {
-                display: flex;
-                justify-content: space-between;
-            }
-            
-            .two-form-inputs input {
-                display: inline-block;
-            }
-            
-            .bigger-form-group {
-                flex: .5;
-            }
-            
-            .bigger,
-            .smaller {
-                display: flex;
-                justify-content: space-between;
-                margin-top: .5rem;
-                align-items: center;
-                color: #828282;
-                border: 1px solid #828282;
-                padding: .9rem 1rem;
-                border-radius: 1.2rem;
-                -webkit-border-radius: 1.2rem;
-                -moz-border-radius: 1.2rem;
-                -ms-border-radius: 1.2rem;
-                -o-border-radius: 1.2rem;
-            }
-            
-            .bigger input {
-                width: 90%;
-                border: none;
-                outline: none;
-            }
-            
-            .smaller input {
-                width: 100%;
-                border: none;
-                outline: none;
-            }
-            
-            .smaller-form-group {
-                flex: .4;
-            }
-            
-            .form-checkbox {
-                display: flex;
-                align-items: center;
-                margin-top: 1rem;
-            }
-            
-            .form-checkbox label {
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 1.4rem;
-                line-height: 1.2ren;
-                color: #4F4F4F;
-                margin-left: 1rem;
-            }
-            
-            .btn {
-                margin-top: 2rem;
-                justify-self: end;
-                padding: 2rem 4rem;
-                background: #F2994A;
-                border-radius: 1.2rem;
-                -webkit-border-radius: 1.2rem;
-                -moz-border-radius: 1.2rem;
-                -ms-border-radius: 1.2rem;
-                -o-border-radius: 1.2rem;
-                border: none;
-                color: #fff;
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 1.6rem;
-                line-height: 2rem;
-            }
-            
-            .footer {
-                display: grid;
-                justify-items: center;
-                max-width: 114rem;
-                width: 100%;
-            }
-            
-            .footer p {
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 1.4rem;
-                line-height: 1.7rem;
-                text-align: center;
-                color: #BDBDBD;
-            }
-            
-            @media (min-width: 1024px) {
-                html {
-                    font-size: 70.5%;
-                }
-                div.item div.edit-quantity {
-                    width: 100%;
-                }
-                main section {
-                    display: grid;
-                    grid-template-columns: 2fr 1fr;
-                    column-gap: 15%;
-                }
-                .right-section {
-                    grid-column: 2;
-                    align-self: start;
-                }
-                .right-section,
-                .left-section {
-                    grid-row: 1;
-                }
-            }
-            
-            @media(max-width: 1000px) {
-                .edit-quantity {
-                    width: 40%;
-                }
-            }
-            
-            @media (min-width: 768px) {
-                html {
-                    font-size: 62.5%;
-                }
-                .main,
-                .footer {
-                    padding: 6rem;
-                }
-                .item div.edit-quantity {
-                    width: 30%;
-                }
-                .page-intro {
-                    font-size: 3.6rem;
-                    line-height: 4.4rem;
-                    margin-bottom: 6rem;
-                }
-                .left-intro {
-                    font-size: 1.8rem;
-                    line-height: 2.2rem;
-                    margin-bottom: 3rem;
-                }
-                .form-label {
-                    font-size: 1.3rem;
-                    line-height: 1.5rem;
-                }
-                .input-group {
-                    margin-top: 1.5rem;
-                    border: 1px solid #828282;
-                    padding: 1.5rem 2rem;
-                    border-radius: 1.2rem;
-                    -webkit-border-radius: 1.2rem;
-                    -moz-border-radius: 1.2rem;
-                    -ms-border-radius: 1.2rem;
-                    -o-border-radius: 1.2rem;
-                }
-                .form-icon {
-                    font-size: 2.5rem;
-                    margin-right: 3rem;
-                }
-                .form-input {
-                    font-size: 1.7rem;
-                }
-                .right-section {
-                    padding: 5rem;
-                }
-                .bigger,
-                .smaller {
-                    margin-top: 1rem;
-                    padding: 1.5rem 2rem;
-                }
-                .bigger input {
-                    font-size: 1.7rem;
-                }
-                .smaller input {
-                    font-size: 1.7rem;
-                }
-                .form-checkbox {
-                    display: flex;
-                    align-items: center;
-                    margin-top: 2rem;
-                }
-                .form-checkbox label {
-                    font-family: Montserrat;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 1.7rem;
-                    line-height: 1.2ren;
-                    color: #4F4F4F;
-                    margin-left: 2rem;
-                }
-            }
-            
-            @media (min-width: 411px) {
-                html {
-                    font-size: 59%;
-                }
-                div.edit-quantity {
-                    width: 60%;
-                }
-            }
-            
-            @media (min-width: 360px) {
-                html {
-                    font-size: 55%;
-                }
-                div.edit-quantity {
-                    width: 70%;
-                }
-            }
-            
-            @media (min-width: 320px) {
-                .edit-quantity {
-                    width: 90%;
-                }
-            }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+html {
+    font-size: 50%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    min-width: 320px;
+    display: grid;
+    grid: 1fr max-content / 1fr;
+    justify-items: center;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main,
+.footer {
+    max-width: 114rem;
+    width: 100%;
+    padding: 3rem 3rem;
+}
+
+.page-intro {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: #4E5150;
+    padding-bottom: 2rem;
+}
+
+.right-section {
+    padding: 3rem 2rem;
+    background: #F2F2F2;
+    margin-bottom: 5rem;
+}
+
+.right-section,
+.left-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-image,
+.right-section {
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    -ms-border-radius: 1.2rem;
+    -o-border-radius: 1.2rem;
+    object-fit: contain;
+}
+
+.item {
+    display: grid;
+    grid: max-content / max-content 1fr;
+    column-gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.item-image {
+    max-height: 12.4rem;
+}
+
+.item-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.item-name {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #4E5150;
+    margin-bottom: 1rem;
+}
+
+.price-now {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #F2994A;
+    margin-right: 1rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price-before {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-decoration-line: line-through;
+    color: #4E5150;
+}
+
+.edit-quantity {
+    margin-top: auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem;
+    border: 1px solid #828282;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    -ms-border-radius: 1.2rem;
+    -o-border-radius: 1.2rem;
+}
+
+.edit-quantity i {
+    padding: .6rem .7rem;
+    background: #E0E0E0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: #828282;
+}
+
+.edit-quantity .quantity {
+    font-size: 1.8rem;
+}
+
+.lower-section {
+    margin-top: 10rem;
+    margin-bottom: auto;
+}
+
+.lower-section-text {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #333333;
+    border-top: 1px solid #BDBDBD;
+}
+
+.lower-section-text:last-child {
+    padding-bottom: 0;
+}
+
+.left-intro {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #333333;
+    margin-bottom: 2rem;
+}
+
+.left-intro:not(:first-of-type) {
+    margin-top: 4rem;
+}
+
+.form {
+    display: grid;
+    grid: max-content / 1fr;
+    grid-auto-rows: max-content;
+    row-gap: 1rem;
+}
+
+.form-label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #4F4F4F;
+}
+
+.input-group {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    color: #828282;
+    justify-content: space-between;
+    border: 1px solid #828282;
+    padding: .9rem 1rem;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    -ms-border-radius: 1.2rem;
+    -o-border-radius: 1.2rem;
+}
+
+.form-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.form-input {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.two-form-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-form-inputs input {
+    display: inline-block;
+}
+
+.bigger-form-group {
+    flex: .5;
+}
+
+.bigger,
+.smaller {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+    align-items: center;
+    color: #828282;
+    border: 1px solid #828282;
+    padding: .9rem 1rem;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    -ms-border-radius: 1.2rem;
+    -o-border-radius: 1.2rem;
+}
+
+.bigger input {
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+.smaller input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.smaller-form-group {
+    flex: .4;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.form-checkbox label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.2ren;
+    color: #4F4F4F;
+    margin-left: 1rem;
+}
+
+.btn {
+    margin-top: 2rem;
+    justify-self: end;
+    padding: 2rem 4rem;
+    background: #F2994A;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    -ms-border-radius: 1.2rem;
+    -o-border-radius: 1.2rem;
+    border: none;
+    color: #fff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.footer {
+    display: grid;
+    justify-items: center;
+    max-width: 114rem;
+    width: 100%;
+}
+
+.footer p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    text-align: center;
+    color: #BDBDBD;
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 70.5%;
+    }
+    div.item div.edit-quantity {
+        width: 100%;
+    }
+    main section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 15%;
+    }
+    .right-section {
+        grid-column: 2;
+        align-self: start;
+    }
+    .right-section,
+    .left-section {
+        grid-row: 1;
+    }
+}
+
+@media(max-width: 1000px) {
+    .edit-quantity {
+        width: 40%;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+    .main,
+    .footer {
+        padding: 6rem;
+    }
+    .item div.edit-quantity {
+        width: 30%;
+    }
+    .page-intro {
+        font-size: 3.6rem;
+        line-height: 4.4rem;
+        margin-bottom: 6rem;
+    }
+    .left-intro {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        margin-bottom: 3rem;
+    }
+    .form-label {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+    .input-group {
+        margin-top: 1.5rem;
+        border: 1px solid #828282;
+        padding: 1.5rem 2rem;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem;
+        -ms-border-radius: 1.2rem;
+        -o-border-radius: 1.2rem;
+    }
+    .form-icon {
+        font-size: 2.5rem;
+        margin-right: 3rem;
+    }
+    .form-input {
+        font-size: 1.7rem;
+    }
+    .right-section {
+        padding: 5rem;
+    }
+    .bigger,
+    .smaller {
+        margin-top: 1rem;
+        padding: 1.5rem 2rem;
+    }
+    .bigger input {
+        font-size: 1.7rem;
+    }
+    .smaller input {
+        font-size: 1.7rem;
+    }
+    .form-checkbox {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .form-checkbox label {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.7rem;
+        line-height: 1.2ren;
+        color: #4F4F4F;
+        margin-left: 2rem;
+    }
+}
+
+@media (min-width: 411px) {
+    html {
+        font-size: 59%;
+    }
+    div.edit-quantity {
+        width: 60%;
+    }
+}
+
+@media (min-width: 360px) {
+    html {
+        font-size: 55%;
+    }
+    div.edit-quantity {
+        width: 70%;
+    }
+}
+
+@media (min-width: 320px) {
+    .edit-quantity {
+        width: 90%;
+    }
+}
