@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/f570283f45.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="main">
+        <h1 class="page-intro">Checkout</h1>
+        <section>
+            <section class="right-section">
+                <div class="item">
+                    <img src="./img/photo1.png" alt="Bag" class="item-image">
+                    <div class="item-right">
+                        <p class="item-name">Vintage Backbag</p>
+                        <p class="price">
+                            <span class="price-now">$54.99</span>
+                            <span class="price-before">$94.99</span>
+                        </p>
+                        <div class="edit-quantity">
+                            <i class="fas fa-minus subtract"></i>
+                            <span class="quantity">1</span>
+                            <i class="fas fa-plus add"></i>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/photo2.png" alt="Bag" class="item-image">
+                    <div class="item-right">
+                        <p class="item-name">Levi Shoes</p>
+                        <p class="price">
+                            <span class="price-now">$74.99</span>
+                            <span class="price-before">$124.99</span>
+                        </p>
+                        <div class="edit-quantity">
+                            <i class="fas fa-minus subtract"></i>
+                            <span class="quantity">1</span>
+                            <i class="fas fa-plus add"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lower-section">
+                    <p class="lower-section-text">
+                        <span class="left">Shipping</span>
+                        <span class="right">$19</span>
+                    </p>
+                    <p class="lower-section-text">
+                        <span class="left">Total</span>
+                        <span class="right">$148.98</span>
+                    </p>
+                </div>
+            </section>
+            <section class="left-section">
+                <h2 class="left-intro">Contact Information</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group">
+                            <i class="fas fa-envelope form-icon"></i>
+                            <input type="email" id="email" class="form-input" placeholder="Enter your email..">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel" class="form-label">Phone</label>
+                        <div class="input-group">
+                            <i class="fas fa-phone-alt form-icon"></i>
+                            <input type="tel" id="tel" class="form-input" placeholder="Enter your phone..">
+                        </div>
+                    </div>
+                </form>
+
+                <h2 class="left-intro shipping-title">Shipping Address</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full name</label>
+                        <div class="input-group">
+                            <i class="fas fa-user-circle form-icon"></i>
+                            <input type="name" id="name" class="form-input" placeholder="Your Full name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address" class="form-label">Address</label>
+                        <div class="input-group">
+                            <i class="fas fa-home form-icon"></i>
+                            <input type="tel" id="address" class="form-input" placeholder="Your address">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="city" class="form-label">City</label>
+                        <div class="input-group">
+                            <i class="fas fa-city form-icon"></i>
+                            <input type="tel" id="city" class="form-input" placeholder="Your city">
+                        </div>
+                    </div>
+                    <div class="two-form-inputs">
+                        <div class="bigger-form-group">
+                            <label for="country" class="form-label">Country</label>
+                            <div class="bigger">
+                                <i class="fas fa-city form-icon"></i>
+                                <input type="text" placeholder="Your country">
+                                <i class="fas fa-chevron-down form-icon"></i>
+                            </div>
+                        </div>
+                        <div class="smaller-form-group">
+                            <label for="country" class="form-label">Country</label>
+                            <div class="smaller">
+                                <i class="fas fa-mail-bulk form-icon"></i>
+                                <input type="text" placeholder="Postal code">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input id="save-information" type="checkbox">
+                        <label for="save-information">Save this information for next time</label>
+                    </div>
+
+                    <button class="btn btn-orange">
+                        Continue
+                    </button>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>created by omogbemeh - devChallenges.io</p>
+    </footer>
+</body>
+
+</html>
